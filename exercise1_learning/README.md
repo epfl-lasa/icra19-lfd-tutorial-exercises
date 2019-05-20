@@ -9,6 +9,7 @@ Run the script ```setup_demo.m```
 - ```gui_lpvDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems focused on Linear Parameter Varying formulation with GMM-based mixing function and different Lyapunov candidate functions as proposed in [1], where a non-linear DS formulated as:
 <p align="center">
 <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/f_x.gif"></>                                                                           
+
 is learned from demonstrations in a decoupled manner. Where the GMM parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/theta_gamma.gif"> used to parametrize <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/gamma.gif"> are estimated via the physically-consistent GMM approach proposed in [1] and provided in [phys-gmm](https://github.com/nbfigueroa/phys-gmm) and the DS parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/DS_params.gif"> are estimated via semi-definite optimization problem that ensures global asymptotic stability of the system via constraints derived from either a:
 - (O1)-QLF (Quadratic Lyapunov Function): <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/stab_qlf.gif">
 - (O2)-P-QLF (Parametrized QLF):  <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/stab_pqlf.gif">
