@@ -9,6 +9,12 @@ This package includes GUI simulations and demo scripts for learning stable non-l
 is learned from demonstrations in a decoupled manner. Where the GMM parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/theta_gamma.gif"> used to parametrize <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/gamma.gif"> are estimated via the physically-consistent GMM approach proposed in [1] and provided in [phys-gmm](https://github.com/nbfigueroa/phys-gmm) and the DS parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/DS_params.gif"> are estimated via semi-definite optimization problem that ensures global asymptotic stability of the system via constraints derived from either a:
 - (O1)-QLF (Quadratic Lyapunov Function): <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/stab_qlf.gif">
 - (O2)-P-QLF (Parametrized QLF):  <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/stab_pqlf.gif">
+
+with different GMM estimation options:
+- Manual K selection
+- Model Selection with BIC
+- PC-GMM [1]
+
 [![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
 
