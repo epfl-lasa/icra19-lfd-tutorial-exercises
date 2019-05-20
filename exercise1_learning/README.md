@@ -1,19 +1,45 @@
-# learning-ds-tutorial
-This package includes demo scripts and a GUI simulation for learning stable non-linear Dynamical Systems (DS) from demonstrations using SEDS [1] and LPV-DS [2,3] approaches developed in LASA-EPFL.
+# exercise1_learning
+This package includes GUI simulations and demo scripts for learning stable non-linear Dynamical Systems (DS) from demonstrations using LPV-DS [1] and SEDS [2] approaches developed in LASA-EPFL.
 
-### Running the demo scripts
-There are three important demo scripts:
- - ```demo_SEDS.m```: Includes commented code blocks describing all the steps needed to learn a SEDS model on self-drawn data with a GUI or data loaded from the LASA handwriting dataset [1].
- - ```demo_LPVDS.m```: Includes commented code blocks describing all the steps needed to learn an LPV-DS model on self-drawn data with a GUI or data loaded from the LASA handwriting dataset [1] with different GMM fitting options and DS parameters optimization variants. 
-- ```gui_learningDS.m```: Brings up a GUI including all options in the above script + a robot simulation (as shown below) . 
+### Installing the exercise
+Run the script ```setup_demo.m```
+
+
+### Running the gui for exercise sessions
+- ```gui_lpvDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems focused on Linear Parameter Varying formulation with GMM-based mixing function and different Lyapunov candidate functions as proposed in [1], where a non-linear DS formulated as:
+<p align="center">
+<img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/f_x.gif"></>                                                                           
+
+is learned from demonstrations in a decoupled manner. Where the GMM parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/theta_gamma.gif"> used to parametrize <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/gamma.gif"> are estimated via the physically-consistent GMM approach proposed in [1] and provided in [phys-gmm](https://github.com/nbfigueroa/phys-gmm) and the DS parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/DS_params.gif"> are estimated via semi-definite optimization problem that ensures global asymptotic stability of the system via constraints derived from either a:
+- (O1)-QLF (Quadratic Lyapunov Function): <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/stab_qlf.gif">
+- (O2)-P-QLF (Parametrized QLF):  <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/stab_pqlf.gif">
+
+with different GMM estimation options:
+- Manual K selection
+- Model Selection with BIC
+- PC-GMM [1]
+
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
 
 [![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
 
 
+
+- [Optional] ```gui_seDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems with the SEDS (constrained-GMR) [2] formulation and learning approach. Also includes robot simulation as above. 
+
+*A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
+
+[![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
+
+
+
+### Using algorithms on own data
+Within the [ds_opt](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/tree/master/exercise1_learning/ds-opt) folder, we provide demo scripts for using any of the presented learning algorithms on test 2D and 3D data. These scripts are useful if you want to learn DS with your own datasets. 
+
+
 **References**     
-[1] Khansari Zadeh, S. M. and Billard, A. (2011) Learning Stable Non-Linear Dynamical Systems with Gaussian Mixture Models. IEEE Transaction on Robotics, vol. 27, num 5, p. 943-957.    
-[2] Mirrazavi Salehian, S. S. (2018) Compliant control of Uni/ Multi- robotic arms with dynamical systems. PhD Thesis.  
-[3] Figueroa, N. and Billard, A. (2018) A Physically-Consistent Bayesian Non-Parametric Mixture Model for Dynamical System Learning. In Proceedings of the 2nd Conference on Robot Learning (CoRL).
+[1] Figueroa, N. and Billard, A. (2018) A Physically-Consistent Bayesian Non-Parametric Mixture Model for Dynamical System Learning. In Proceedings of the 2nd Conference on Robot Learning (CoRL).
+[2] Khansari Zadeh, S. M. and Billard, A. (2011) Learning Stable Non-Linear Dynamical Systems with Gaussian Mixture Models. IEEE Transaction on Robotics, vol. 27, num 5, p. 943-957.    
+
 
 **Contact**: [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) (nadia.figueroafernandez AT epfl dot ch)

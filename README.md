@@ -13,3 +13,5 @@ The tutorial includes the following exercises, go to each readme file for instru
 - [Exercise 4](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/README.md): Modulating Dynamical Systems for Force Generations
 - [Exercise 5](): Learning Locally Active Globally Stable Dynamical Systems
 
+
+To download this repository as a zip file, click on this [link]().

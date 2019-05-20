@@ -13,5 +13,5 @@ To start the demo:
 
 Nadia Comments:
 - Current code is not stand-alone. Depends on svm_regressor function from ML_toolbox
-- Current code will only work for MATLAB version 2017a upwards, due to the vecnorm() function
+- Current code will only work for MATLAB version 2017a upwards, due to the vecnorm() function, I have a fix for this in my lags code
 - gpml folder not necessary [Removed]
