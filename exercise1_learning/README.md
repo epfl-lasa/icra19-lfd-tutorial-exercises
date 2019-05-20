@@ -15,13 +15,18 @@ with different GMM estimation options:
 - Model Selection with BIC
 - PC-GMM [1]
 
-[![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
+
+[![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
+
 
 
 - [Optional] ```gui_seDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems with the SEDS (constrained-GMR) [2] formulation and learning approach. Also includes robot simulation as above. 
-[![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
+
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
+
+[![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
+
 
 
 ### Using algorithms on own data
