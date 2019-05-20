@@ -2,7 +2,7 @@
 This package includes GUI simulations and demo scripts for learning stable non-linear Dynamical Systems (DS) from demonstrations using LPV-DS [1] and SEDS [2] approaches developed in LASA-EPFL.
 
 ### Running the gui for exercise sessions
-- ```gui_lpvDS.m```: Brings up a GUI including for estimation of Globally Asymptotically Stable Dynamical Systems focused on Linear Parameter Varying formulation with GMM-based mixing function and different Lyapunov candidate functions as proposed in [1], where a non-linear DS formulated as:
+- ```gui_lpvDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems focused on Linear Parameter Varying formulation with GMM-based mixing function and different Lyapunov candidate functions as proposed in [1], where a non-linear DS formulated as:
 <p align="center">
 <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/f_x.gif"></>
                                                                            
@@ -13,7 +13,7 @@ is learned from demonstrations in a decoupled manner. Where the GMM parameters <
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
 
 
-- [Optional] ```gui_seDS.m```: Brings up a GUI including SEDS (constrained-GMR) learning approach with robot simulation. 
+- [Optional] ```gui_seDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems with the SEDS (constrained-GMR) [2] formulation and learning approach. Also includes robot simulation as above. 
 [![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
 
