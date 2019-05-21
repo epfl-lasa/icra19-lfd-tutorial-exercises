@@ -11,6 +11,7 @@ You can find a use case study of this here:
 [https://www.youtube.com/embed/fhfBBMH4XVg](https://www.youtube.com/embed/fhfBBMH4XVg)
 
 
+**Compatibility**: This demo has been tested in Matlab versions 2015a - 2018a.
 
 # How to run
 It is very simple! just run gui_Code.m. You just need to run the GUI file! See the following example:
