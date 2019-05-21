@@ -25,9 +25,9 @@ with different GMM estimation options:
 - Model Selection with BIC
 - PC-GMM [1]
 
-*A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
+*A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/jDcPaOUMwvI)*
 
-[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/lpv-ds-gui-data.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
+[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/lpv-ds-gui-data.png)](https://youtu.be/jDcPaOUMwvI)
 
 ---
 
