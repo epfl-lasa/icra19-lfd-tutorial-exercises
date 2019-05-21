@@ -28,11 +28,11 @@ with different GMM estimation options:
 
 [![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/lpv-ds-gui-data.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
 
-
+---
 
 - [Optional] ```gui_seDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems with the SEDS (constrained-GMR) [2] where a non-linear DS formulated as:
 <p align="center">
-<img src="https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/equation-seds.png" width="300"></> 
+<img src="https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/equation-seds.png" width="250"></> 
   
 Whith the probability distribution being estimated with a Gaussian Mixture Model (GMM). This GUI also includes robot simulation as above. 
 
