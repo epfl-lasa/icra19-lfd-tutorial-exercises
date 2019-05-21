@@ -21,7 +21,7 @@ with different GMM estimation options:
 
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
 
-[![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
+[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/lpv-ds-gui-data.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
 
 
 
@@ -29,7 +29,7 @@ with different GMM estimation options:
 
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
 
-[![](https://github.com/nbfigueroa/learning-ds-tutorial/blob/master/img/GUI_2.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
+[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/seds-gui-data.png)](https://www.youtube.com/watch?v=5fQO9Oluih0)
 
 
 
@@ -38,7 +38,7 @@ Within the [ds_opt](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/t
 
 
 **References**     
-[1] Figueroa, N. and Billard, A. (2018) A Physically-Consistent Bayesian Non-Parametric Mixture Model for Dynamical System Learning. In Proceedings of the 2nd Conference on Robot Learning (CoRL).
+[1] Figueroa, N. and Billard, A. (2018) A Physically-Consistent Bayesian Non-Parametric Mixture Model for Dynamical System Learning. In Proceedings of the 2nd Conference on Robot Learning (CoRL).   
 [2] Khansari Zadeh, S. M. and Billard, A. (2011) Learning Stable Non-Linear Dynamical Systems with Gaussian Mixture Models. IEEE Transaction on Robotics, vol. 27, num 5, p. 943-957.    
 
 
