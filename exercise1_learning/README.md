@@ -4,6 +4,7 @@ This package includes GUI simulations and demo scripts for learning stable non-l
 ### Installing the exercise
 Run the script ```setup_demo.m```
 
+**Compatibility**: This demo has been tested in Matlab versions 2015a - 2018a.
 
 ### Running the gui for exercise sessions
 - ```gui_lpvDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems focused on Linear Parameter Varying formulation with GMM-based mixing function and different Lyapunov candidate functions as proposed in [1], where a non-linear DS formulated as:
