@@ -12,9 +12,12 @@ Run the script ```setup_demo.m```
 
 is learned from demonstrations in a decoupled manner. Where the GMM parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/theta_gamma.gif"> used to parametrize <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/gamma.gif"> are estimated via the physically-consistent GMM approach proposed in [1] and provided in [phys-gmm](https://github.com/nbfigueroa/phys-gmm) and the DS parameters <img src="https://github.com/nbfigueroa/ds-opt/blob/master/figs/img/DS_params.gif"> are estimated via semi-definite optimization problem that ensures global asymptotic stability of the system via constraints derived from either a:
 - (O1)-QLF (Quadratic Lyapunov Function): 
-<img src="https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/qlf-constraint-x.png" width="300">
+<p align="left">
+<img src="https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/qlf-constraint-x.png" width="500">
+  
 - (O2)-P-QLF (Parametrized QLF):  
-<img src="https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/pqlf-constraint-x.png" width="300">
+<p align="left">
+<img src="https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/pqlf-constraint-x.png" width="700">
 
 with different GMM estimation options:
 - Manual K selection
@@ -27,7 +30,11 @@ with different GMM estimation options:
 
 
 
-- [Optional] ```gui_seDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems with the SEDS (constrained-GMR) [2] formulation and learning approach. Also includes robot simulation as above. 
+- [Optional] ```gui_seDS.m```: Brings up a GUI for estimation of Globally Asymptotically Stable Dynamical Systems with the SEDS (constrained-GMR) [2] where a non-linear DS formulated as:
+<p align="center">
+<img src="https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/img/equation-seds.png" width="300"></> 
+  
+Whith the probability distribution being estimated with a Gaussian Mixture Model (GMM). This GUI also includes robot simulation as above. 
 
 *A guided video explaining how to use the GUI, can be found in this [link](https://www.youtube.com/watch?v=5fQO9Oluih0)*
 
