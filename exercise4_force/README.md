@@ -11,14 +11,14 @@ Run the script ```setup_demo.m```
 
 *A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/jDcPaOUMwvI)*
 
-[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui.png)](https://youtu.be/jDcPaOUMwvI)
+[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui.png)](https://youtu.be/y4edLG6oACk)
 
 
 - ```modulated_ds_interface(1,0,1).m```: Brings up a GUI that loads a pre-learned surface model and applies a single continuous perturbation during the execution of the task [1].
 
 *A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/jDcPaOUMwvI)*
 
-[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui-perturb.png)](https://youtu.be/jDcPaOUMwvI)
+[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui-perturb.png)](https://youtu.be/y4edLG6oACk)
 
 
 ### References
