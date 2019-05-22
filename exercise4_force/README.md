@@ -1,6 +1,5 @@
 ## exercise4_force
-
-Modulating DS for force and motion generation.
+Modulating DS for force and motion generation [1].
 
 
 ### To start the demo:
@@ -8,10 +7,8 @@ Modulating DS for force and motion generation.
 
 2- Run ```modulated_ds_interface.m```
 
-### Usage: 
-1: modulated_ds_interface
+3- Run simulation with perturbation ```modulated_ds_interface(1,0,1).m```
 
-2: modulated_ds_interface(generatePerturbation, makeAMovie, loadSavedSurfaceModel)  
-   generatePerturbation: (Boolean) Generate a perturbation on the robot during the                                             simulation. [Default = false.]  
-  makeAMove: (Boolean) Generate a movie of the simulation. [Default = false].  
-  loadSavedSurfaceModel: (Boolean) Load the surface model previously saved. [Default = false].  
+
+### References
+[1] ...
