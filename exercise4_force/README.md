@@ -1,5 +1,5 @@
 ## exercise4_force
-Modulating DS for force and motion generation [1].
+An approach for modulating a dynamical system (DS) for contact force generation along a surface [1].
 
 ### Installing the exercise
 Run the script ```setup_demo.m```
