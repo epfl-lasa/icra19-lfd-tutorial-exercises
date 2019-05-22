@@ -23,3 +23,6 @@ Run the script ```setup_demo.m```
 
 ### References
 [1] Amanhoud, W., Khoramshahi, M. and Billard, A. (2019) A Dynamical System Approach to Motion and Force Generation in Contact Tasks. In Proceedings of Robotics, Science and Systems (RSS). [Accepted]. 
+
+
+**Contact**: [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) (nadia.figueroafernandez AT epfl dot ch)
