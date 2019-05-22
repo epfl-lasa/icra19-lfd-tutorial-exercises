@@ -11,11 +11,3 @@ To start the demo:
           makeAMove: (Boolean) Generate a movie of the simulation. Default = false.
           loadSavedSurfaceModel: (Boolean) Load the surface model previously saved.
                                  Default = false.
-
-
-
-Nadia Comments:
-- Current code is not stand-alone. Depends on svm_regressor function from ML_toolbox [Can be added]
-- Current code will only work for MATLAB version 2017a upwards, due to the vecnorm() function, I have a fix for this in my lags code
-- gpml folder not necessary [Removed]
-- Some of the functions for the GUI depend on Image Processing Toolbox, this might be a problem for people who don't have that toolbox installed
