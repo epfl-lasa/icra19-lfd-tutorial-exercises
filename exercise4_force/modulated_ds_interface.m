@@ -205,7 +205,8 @@ function smoothMouseData(hObject,handles)
 
 function buildDataset(hObject,handles)
 
-    nbData = 4000;
+%     nbData = 4000;
+    nbData = 500;
     handles.X = zeros(nbData,2);
     offset = 1;
     
