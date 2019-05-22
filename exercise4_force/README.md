@@ -9,14 +9,14 @@ Run the script ```setup_demo.m```
 ### Running the gui for exercise sessions
 - ```modulated_ds_interface.m```: Brings up a GUI for the simulation of force generation with dynamical systems as proposed in [1]. With this GUI you can learn a model of a surface and simulate the task of generating a desired contact force along the surface.
 
-*A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/jDcPaOUMwvI)*
+*A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/y4edLG6oACk)*
 
 [![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui.png)](https://youtu.be/y4edLG6oACk)
 
 
 - ```modulated_ds_interface(1,0,1).m```: Brings up a GUI that loads a pre-learned surface model and applies a single continuous perturbation during the execution of the task [1].
 
-*A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/jDcPaOUMwvI)*
+*A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/y4edLG6oACk)*
 
 [![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui-perturb.png)](https://youtu.be/y4edLG6oACk)
 
