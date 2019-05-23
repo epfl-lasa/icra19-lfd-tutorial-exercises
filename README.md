@@ -9,7 +9,7 @@ website of tutorial available [here](https://epfl-lasa.github.io/TutorialICRA201
 The tutorial includes the following exercises, go to each readme file for instructions:
 - [Exercise 1](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise1_learning/README.md): Learning Stable Non-Linear Dynamical Systems
 - [Exercise 2](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise2_obstacle/README.md): Modulating Dynamical Systems for Obstacle Avoidance. 
-To run the online tutorial, follow the link:
+To run the online tutorial, follow the link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hubernikus/dynamic_obstacle_avoidance_python/master?filepath=notebook)
 [https://mybinder.org/v2/gh/hubernikus/dynamic_obstacle_avoidance_python/master?filepath=notebook](https://mybinder.org/v2/gh/hubernikus/dynamic_obstacle_avoidance_python/master?filepath=notebook)
 - [Exercise 3](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise3_contact/README.md): Modulating Dynamical Systems for Transitioning through Contacts
 - [Exercise 4](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/README.md): Modulating Dynamical Systems for Force Generations
