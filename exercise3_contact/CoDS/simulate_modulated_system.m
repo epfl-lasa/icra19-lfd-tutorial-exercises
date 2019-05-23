@@ -34,7 +34,7 @@ A_1=A(3:4,1:2);
 
 
 X(:,1)=X_initial(1:2,1);
-DX(:,1)=X_initial(3:4,1);
+DX(:,1)=10*X_initial(3:4,1);
 % X_mu=(X_C+X_L)/2;
 % signal_i=eye(2);
 CONTACT=0;
