@@ -112,9 +112,9 @@ X2=[ handles.axes1.YLim(1):0.05: handles.axes1.YLim(2)]';
 X1=repmat(X1,size(X2,1),1);
 X2=repmat(X2,1,size(X1,2));
 Walla=zeros(size(X2));
-Wall_Base=handles.N_x'*handles.X_C;
 
-Handle_sign=sign(handles.N_x'*(handles.X_free-handles.X_C));
+Wall_Base=handles.N_x'*handles.X_C;
+Handle_sign=sign(handles.N_x'*handles.X_free-Wall_Base);
 for ii=1:size(X2,1),
     for jj=1:size(X2,2)
         XX=[X1(ii,jj);X2(ii,jj)];
@@ -469,9 +469,9 @@ X2=[ handles.axes1.YLim(1):0.05: handles.axes1.YLim(2)]';
 X1=repmat(X1,size(X2,1),1);
 X2=repmat(X2,1,size(X1,2));
 Walla=zeros(size(X2));
-Wall_Base=handles.N_x'*handles.X_C;
 
-Handle_sign=sign(handles.N_x'*(handles.X_free-handles.X_C));
+Wall_Base=handles.N_x'*handles.X_C;
+Handle_sign=sign(handles.N_x'*handles.X_free-Wall_Base);
 for ii=1:size(X2,1),
     for jj=1:size(X2,2)
         XX=[X1(ii,jj);X2(ii,jj)];
