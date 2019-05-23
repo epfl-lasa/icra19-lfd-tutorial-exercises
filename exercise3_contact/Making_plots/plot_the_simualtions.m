@@ -130,7 +130,7 @@ X2=repmat(X2,1,size(X1,2));
 Walla=zeros(size(X2));
 Wall_Base=Option.N_x'*Option.X_C;
 
-Handle_sign=sign(Option.N_x'*Option.X_free);
+Handle_sign=sign(Option.N_x'*Option.X_free-Wall_Base);
 for ii=1:size(X2,1),
     for jj=1:size(X2,2)
         XX=[X1(ii,jj);X2(ii,jj)];
