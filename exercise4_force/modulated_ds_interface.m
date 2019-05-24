@@ -186,8 +186,15 @@ function cleanPlot(hObject,handles)
     axis(handles.axisLimits);
     xlabel('$x$ [$m$]','Interpreter','latex','FontSize',15);
     ylabel('$y$ [$m$]','Interpreter','latex','FontSize',15);
-    xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
-    yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+    
+    % This function only exists in R2016b and upwards
+%     xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
+%     yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+    
+    % For backward compatibility
+    set(gca,'XTick',handles.axisLimits(1):0.2:handles.axisLimits(2))
+    set(gca,'YTick',handles.axisLimits(3):0.2:handles.axisLimits(4))
+    
     title('Draw the surface below the dashed line using the mouse','Interpreter','latex','FontSize',15);
     guidata(hObject, handles);
     
@@ -205,7 +212,8 @@ function smoothMouseData(hObject,handles)
 
 function buildDataset(hObject,handles)
 
-    nbData = 4000;
+%     nbData = 4000;
+    nbData = 500;
     handles.X = zeros(nbData,2);
     offset = 1;
     
@@ -213,7 +221,11 @@ function buildDataset(hObject,handles)
     handles.X(:,2) = (offset+max(handles.Xs(:,2)))*rand(nbData,1);
     handles.tau = zeros(length(handles.X),1);
     for k = 1:length(handles.X)
-        [val,id] = min(vecnorm(handles.X(k,:)'-handles.Xs')');
+        % For backwards compatibility
+        tmp = repmat(handles.X(k,:)',[1 size(handles.Xs',2)])-handles.Xs';
+        % Only works for 2017a upwards
+%         tmp = handles.X(k,:)'-handles.Xs';        
+        [val,id] = min(vecnorm(tmp)');
         if(handles.X(k,2)-handles.Xs(id,2)<0)
             handles.tau(k) = -val;
         else
@@ -276,8 +288,14 @@ function plotLearnedSurface(hObject,handles)
     hold off;
     axis equal;
     axis(handles.axisLimits);
-    xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
-    yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+    
+%     xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
+%     yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+    
+    % For backward compatibility
+    set(gca,'XTick',handles.axisLimits(1):0.2:handles.axisLimits(2))
+    set(gca,'YTick',handles.axisLimits(3):0.2:handles.axisLimits(4))
+    
     xlabel('$x$ [$m$]','Interpreter','latex','FontSize',15);
     ylabel('$y$ [$m$]','Interpreter','latex','FontSize',15);
     title('Learned surface model','Interpreter','latex','FontSize',15);
@@ -328,9 +346,14 @@ function startSimulation(hObject,handles)
     [~,id] = min(handles.Xs(:,1));
     set(cl(2),'Position',[-0.95,handles.Xs(id,2)-0.05,0]);
     axis equal;
-    axis(handles.axisLimits);
-    xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
-    yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+    axis(handles.axisLimits);        
+%     xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
+%     yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+    
+    % For backward compatibility
+    set(gca,'XTick',handles.axisLimits(1):0.2:handles.axisLimits(2))
+    set(gca,'YTick',handles.axisLimits(3):0.2:handles.axisLimits(4))
+    
     xlabel('$x$ [$m$]','Interpreter','latex','FontSize',15);
     ylabel('$y$ [$m$]','Interpreter','latex','FontSize',15);
     grid on;
@@ -339,8 +362,13 @@ function startSimulation(hObject,handles)
     robot.plot([0,-pi/2]);
     view([0,90]);
     axis(handles.axisLimits);
-    xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
-    yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+%     xticks(handles.axisLimits(1):0.2:handles.axisLimits(2));
+%     yticks(handles.axisLimits(3):0.2:handles.axisLimits(4));
+%     
+    % For backward compatibility
+    set(gca,'XTick',handles.axisLimits(1):0.2:handles.axisLimits(2))
+    set(gca,'YTick',handles.axisLimits(3):0.2:handles.axisLimits(4))
+    
     xlabel('$x$ [$m$]','Interpreter','latex','FontSize',15);
     ylabel('$y$ [$m$]','Interpreter','latex','FontSize',15);
     rotate3d off;

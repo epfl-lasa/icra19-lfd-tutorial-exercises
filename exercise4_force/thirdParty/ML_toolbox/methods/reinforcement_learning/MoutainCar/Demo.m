@@ -1,3 +1,0 @@
-
-
-MountainCarDemo(13000);

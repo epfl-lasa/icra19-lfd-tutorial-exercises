@@ -1,17 +1,28 @@
 ## exercise4_force
+An approach for modulating a dynamical system (DS) for contact force generation along a surface [1].
 
-Modulating DS for force and motion generation.
+### Installing the exercise
+Run the script ```setup_demo.m```
+
+**Compatibility**: These exercise scripts have been tested in Matlab versions 2015a - 2018a.
+
+### Running the gui for exercise sessions
+- ```modulated_ds_interface.m```: Brings up a GUI for the simulation of force generation with dynamical systems as proposed in [1]. With this GUI you can learn a model of a surface and simulate the task of generating a desired contact force along the surface.
+
+*A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/y4edLG6oACk)*
+
+[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui.png)](https://youtu.be/y4edLG6oACk)
 
 
-### To start the demo:
-1- Execute the script ```setup_demo.m```
+- ```modulated_ds_interface(1,0,1).m```: Brings up a GUI that loads a pre-learned surface model and applies a single continuous perturbation during the execution of the task [1].
 
-2- Run ```modulated_ds_interface.m```
+*A guided video explaining how to use the GUI, can be found in this [link](https://youtu.be/y4edLG6oACk)*
 
-### Usage: 
-1: modulated_ds_interface
+[![](https://github.com/epfl-lasa/icra19-lfd-tutorial-exercises/blob/master/exercise4_force/img/force-ds-gui-perturb.png)](https://youtu.be/y4edLG6oACk)
 
-2: modulated_ds_interface(generatePerturbation, makeAMovie, loadSavedSurfaceModel)  
-   generatePerturbation: (Boolean) Generate a perturbation on the robot during the                                             simulation. [Default = false.]  
-  makeAMove: (Boolean) Generate a movie of the simulation. [Default = false].  
-  loadSavedSurfaceModel: (Boolean) Load the surface model previously saved. [Default = false].  
+
+### References
+[1] Amanhoud, W., Khoramshahi, M. and Billard, A. (2019) A Dynamical System Approach to Motion and Force Generation in Contact Tasks. In Proceedings of Robotics, Science and Systems (RSS). [Accepted]. 
+
+
+**Contact**: [Walid Amanhoud](http://lasa.epfl.ch/people/member.php?SCIPER=202312) (walid.amanhoud AT epfl dot ch) or [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) (nadia.figueroafernandez AT epfl dot ch)
